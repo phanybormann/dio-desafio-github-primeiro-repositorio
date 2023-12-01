@@ -1,0 +1,77 @@
+VERSIONAMENTO DE CÓDIGO COM GIT E GIT HUB
+Objetivo Geral
+Introduzir ao versionamento de código com Git e GitHub
+Conhecer as ferramentas
+ Instalar, Configurar e Autenticar 
+Primeiros Passos com Git e Git Hub 
+Dicas e Materiais de Apoio
+
+Sistemas de Controle de Versão
+Controlam as versões de um arquivo ao longo do tempo.
+Registra o histórico de atualizações de um arquivo
+Gerencia quais foram as alterações, a data, autor, etc
+Organização, controle e segurança.
+
+Tipos de Sistemas
+VCS Centralizado (CVCS)
+Ex: CVS, Subversion
+VCS Distribuído (DVCS)
+Ex: Git, Mercurial
+
+Centralizado
+Tem apenas um servidor central.  Se ficar fora do ar, você não consegue fazer alteração nem salvar. Se não tiver backup e tiver arquivo corrompido, perde o projeto.
+
+Distribuído
+Cada banco de versão é duplicado, cada repositório. 
+Pode editar mesmo que o servidor esteja fora do ar.
+Clona o repositório completo, o que inclui o histórico de versões.
+Cada clone é como backup, que possibilita um fluxo de trabalho flexível e possibilita o trabalho sem conexão à rede.
+
+
+O que é Git
+Sistema de Controle de Versão Distribuído
+Gratuito e Open Source (Código Aberto)
+Ramificações (branching) e fusões (merging) eficientes
+Leve e rápido.
+
+Fluxo básico do Git
+git clone – Clona um repositório git existente para um novo diretório (pasta) local.
+git commit – grava alterações no repositório 
+git pull – puxa as alterações do repositório remoto para o local (busca e mescla)
+git push – empurra as alterações do repositório local para o remoto.
+
+GitHub
+Plataforma de hospedagem de código para controle de versão com Git e colaboração
+Comunidade ativa
+Utilizado mundialmente
+Mascote “Octocat”
+
+Git atua no banco de versões.
+Github hospeda o código.
+
+git config – permite visualizar e definir variáveis de configurações
+ficam armazenadas na linha global, system e local.
+Colocar o nome e email nas pastas:
+Git config –global user.name “” ou user.email 
+Git config init.defaultBranch – diz qual o nome da branch padrão que utilizamos
+
+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 token gerado pro hellotest
+git config –global credential .helper store – para salvar as credenciais / senhas 
+git log – mostra o histórico
+rm -rf .git apaga o que estiver no repositório
+Primeiros Passos
+Criando e Clonando Repositórios
+Existem duas formas de obter um repositório Git na sua máquina:
+- Transformando um diretório local que não está sob controle de versão, num repositório Git.
+- Clonando um repositório Git existente.
+
+Comandos:
+mkdir – cria um diretório. Comando básico do terminal.
+
+Git remote add origin URL – para conectar ao servidor o link do github com git
+
+
+Cria o repositório do github
+Entra na pasta que deseja no computador, abre o Git Bash
+Git clone + link do repositório
+Cd + nome da pasta – começa a trabalhar dentro dessa pasta
